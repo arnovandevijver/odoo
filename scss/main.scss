@@ -1,0 +1,54 @@
+/*  ==========================================================================
+    Main
+    ==========================================================================  */
+
+    // Import Boostrap functions and variables
+
+    @import '../node_modules/bootstrap/scss/_functions.scss';
+    @import '../node_modules/bootstrap/scss/_variables.scss';
+
+    // Nav link
+
+    $nav-link-padding-x: 20px;
+    $nav-link-padding-y: 10px;
+    $nav-link-color: $gray-400;
+    $nav-link-hover-color: $white;
+    $nav-link-disabled-color: $gray-600;
+
+    // Nav tabs
+
+    $nav-tabs-border-width: 0;
+    $nav-tabs-border-radius: 0;
+    $nav-tabs-link-active-color: $gray-700;
+    $nav-tabs-link-active-bg: $white;
+
+    // Card
+
+    $card-spacer-x: 20px;
+    $card-spacer-y: 20px;
+    $card-border-width: 0;
+    $card-border-radius: 0;
+
+    // List group
+
+    $list-group-color: $purple-600;
+    $list-group-bg: $white;
+    $list-group-item-padding-y: 20px;
+    $list-group-item-padding-x: 20px;
+    $list-group-hover-bg: $white;
+    $list-group-active-color: $gray-700;
+    $list-group-active-bg: $white;
+    $list-group-active-border-color: $gray-300;
+    $list-group-action-hover-color: $gray-700;
+    $list-group-action-active-color: $gray-700;
+    $list-group-action-active-bg: $white;
+
+    // Spinner
+
+    $spinner-width: 4rem;
+    $spinner-height: $spinner-width;
+    $spinner-animation-speed: 1s;
+
+    // Bootstrap
+
+    @import '../node_modules/bootstrap/scss/bootstrap.scss';
