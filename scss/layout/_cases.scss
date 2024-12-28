@@ -1,0 +1,39 @@
+/*  ==========================================================================
+    Cases
+    ==========================================================================  */
+
+    .cases {
+        display: flex;
+        gap: 32px;
+
+        @include mq(tablet-s) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    .cases__subnav {
+        flex: 1;
+
+        @include mq(tablet-s) {
+            flex: auto;
+            width: 100%;
+        }
+    }
+
+    .cases__list {
+        flex: 2;
+
+        @include mq(tablet-s) {
+            flex: auto;
+            width: 100%;
+        }
+    }
+
+    .cases__item {
+        display: none;
+    }
+
+        .cases__item--active {
+            display: block;
+        }

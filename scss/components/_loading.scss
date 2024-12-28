@@ -1,0 +1,40 @@
+/*  ==========================================================================
+    Loading
+    ==========================================================================  */
+
+    .loading {
+        text-align: center;
+    }
+
+    .loading__icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border: 3px solid $color_primary;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+
+        -webkit-animation: loading 1s linear infinite;
+                animation: loading 1s linear infinite;
+    
+        
+    }
+    
+    @keyframes loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes loading {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    

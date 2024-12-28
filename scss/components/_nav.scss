@@ -1,0 +1,56 @@
+/*  ==========================================================================
+    Nav
+    ==========================================================================  */
+
+    .nav {
+        border-bottom: 1px solid $color_border_light;
+    }
+
+    .nav__list {
+        display: flex;
+        gap: 32px;
+        overflow-x: scroll;
+    }
+
+    .nav__link {
+        display: block;
+        position: relative;
+        padding: 16px 0;
+        white-space: nowrap;
+        overflow: hidden;
+
+        @extend .transition-hover-fast;
+
+        .nav__item--active & {
+            color: $color_font_primary;
+        }
+
+        .nav__item--disabled & {
+            color: $color_disabled;
+            pointer-events: none;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background-color: $color_primary;
+
+            @extend .transition-hover-fast;
+
+            -webkit-transform: translateY(100%);
+                -ms-transform: translateY(100%);
+                    transform: translateY(100%);
+        }
+
+        .nav__item--active &::after {
+            
+            -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                    transform: translateY(0);
+        }
+    }

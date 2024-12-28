@@ -1,0 +1,49 @@
+// Layout
+$nav_height: 90px;
+$nav_height_shrink: 70px;
+
+$section_spacing: 150px;
+$section_l: $section_spacing; // Desktop
+$section_m: calc($section_spacing * 0.66); // Tablet
+$section_s: 60px; // Mobile
+
+$container_max_width: 1200px;
+
+// Fonts
+$font_primary: ("Poppins", "helvetica", "arial", "sans-serif");
+$font_primary_font_weight: 700;
+$font_primary_font_size: 40px;
+$font_primary_line_height: 1.2;
+$font_primary_scale_ratio: 1.25; // https://www.modularscale.com/?32&px&1.25
+
+$font_secondary: ("Poppins", "helvetica", "arial", "sans-serif");
+$font_secondary_font_weight: 400;
+$font_secondary_font_size: 16px;
+$font_secondary_line_height: 1.5;
+$font_secondary_scale_ratio: 1.25; // https://www.modularscale.com/?32&px&1.25
+
+$font_tertiary: ("Poppins", "helvetica", "arial", "sans-serif");
+$font_tertiary_font_weight: 500;
+$font_tertiary_font_size: 14px;
+$font_tertiary_line_height: 1.2;
+$font_tertiary_scale_ratio: 1.25; // https://www.modularscale.com/?32&px&1.25
+
+// Colors
+$color_primary: #FECE2F;
+$color_secondary: #398C7C;
+$color_tertiary: #CCF2FE;
+$color_quaternary: #FCDEC4;
+
+$color_error: #d20000;
+$color_success: #157420;
+$color_disabled: #CCCCCC;
+
+$color_bg_light: #F5F5F7;
+$color_bg_dark: #398C7C;
+
+$color_border_light: #eee;
+$color_border_medium: #ccc;
+$color_border_dark: #7A7B7D;
+
+$color_font_primary: #222327;
+$color_font_secondary: #7A7B7D;

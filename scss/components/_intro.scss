@@ -1,0 +1,32 @@
+/*  ==========================================================================
+    Intro
+    ==========================================================================  */
+
+    .intro {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+        @include mq(tablet-s) {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+
+    .intro__visu {
+        flex: 1;
+
+        @include mq(tablet-s) {
+            flex: auto;
+            width: 100%;
+        }
+    }
+
+    .intro__copy {
+        flex: 2;
+
+        @include mq(tablet-s) {
+            flex: auto;
+            width: 100%;
+        }
+    }

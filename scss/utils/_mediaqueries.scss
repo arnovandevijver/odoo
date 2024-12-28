@@ -1,0 +1,35 @@
+// Mixin media queries generator
+
+// Media query sizes
+$mq-sizes: (
+    "mobile-s": "(max-width: 400px)",
+    "mobile-l": "(max-width: 600px)",
+    "tablet-s": "(max-width: 800px)",
+    "tablet-m": "(max-width: 1000px)",
+    "tablet-l":  "(max-width: 1100px)",
+    "desktop-s":  "(max-width: 1200px)",
+    "desktop-l":  "(max-width: 1400px)",
+    "desktop-xl":  "(max-width: 1600px)",
+    "desktop-xxl":  "(max-width: 2000px)"
+);
+
+@mixin mq($key) {
+
+    // Check if the mixin has a key
+    @if map-has-key($mq-sizes, $key) {
+
+        // Get the value of this key
+        $value: map-get($mq-sizes, $key);
+
+        // Generate the media query with the value
+        @media all and #{$value} {
+
+            // Writes the CSS content of de mixin
+            @content;
+        }
+    }
+    @else {
+        // Error message if the key doesn't exist
+        @warn "The value '#{$key}' doesn't exist.";
+    }
+}

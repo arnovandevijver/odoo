@@ -1,0 +1,60 @@
+/*  ==========================================================================
+    Helpers
+    ==========================================================================  */
+
+/*  No scroll
+    ----------------------------------  */
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+/*  Media
+    ----------------------------------  */
+
+    .img-contain {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .img-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .img-full {
+        display: block;
+    	width: 100%;
+    }
+
+    .video-full {
+        position: relative;
+    	padding-top: 56.25%; /* 16/9 */
+    	background: #eeeeee;
+    }
+
+    	.video-full > iframe {
+    		position: absolute;
+    		top: 0;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
+    		border: none;
+    	}
+
+/*  Clearfix
+    ----------------------------------  */
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }

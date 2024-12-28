@@ -1,0 +1,99 @@
+/*  ==========================================================================
+    Main layout
+    ==========================================================================  */
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: $font_secondary;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: $color_font_secondary;
+        background: #fff;
+    }
+
+    .page {
+        padding-top: $nav_height;
+
+        @include mq(tablet-l) {
+            padding-top: $nav_height_shrink;
+        }
+    }
+
+    .container {
+        width: 100%;
+        max-width: calc($container_max_width + (80px * 2));
+        margin: 0 auto;
+        padding: 0 80px;
+
+        @include mq(tablet-l) {
+            padding: 0 60px;
+        }
+
+        @include mq(tablet-s) {
+            padding: 0 40px;
+        }
+
+        @include mq(mobile-l) {
+            padding: 0 20px;
+        }
+    }
+
+        .container--l {
+            max-width: calc(($container_max_width + (80px * 2)) * 1.2); // 20% larger
+        }
+
+        .container--m {
+            max-width: calc(($container_max_width + (80px * 2)) * 0.8); // 20% smaller
+        }
+
+        .container--s {
+            max-width: calc(($container_max_width + (80px * 2)) * 0.6); // 40% smaller
+        }
+
+        .container--relative {
+            position: relative;
+        }
+
+        .container--100 {
+            max-width: none;
+        }
+
+    .section {
+        margin: $section_l 0;
+
+        @include mq(tablet-l) {
+            margin: $section_m 0;
+        };
+
+        @include mq(mobile-l) {
+            margin: $section_s 0;
+        };
+    }
+
+        .section--padding {
+            padding: $section_l 0;
+
+            @include mq(tablet-l) {
+                padding: $section_m 0;
+            };
+
+            @include mq(mobile-l) {
+                padding: $section_s 0;
+            };
+        }
+
+        .section--bg {
+            margin: 0;
+            background: $color_bg_light;
+        }
+
+        .section--bt {
+            border-top: 1px solid $color_border_light;
+        }
+
+        .section--bb {
+            border-bottom: 1px solid $color_border_light;
+        }

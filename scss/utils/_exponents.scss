@@ -1,0 +1,17 @@
+/*  ==========================================================================
+    Exponents
+    ==========================================================================  */
+
+    @function exponent($base, $exponent) {
+        $result: 1;
+        @if $exponent > 0 {
+            @for $i from 1 through $exponent {
+                $result: $result * $base;
+            }
+        } @else if $exponent < 0 {
+            @for $i from 1 through -$exponent {
+                $result: $result / $base;
+            }
+        }
+        @return $result;
+    }

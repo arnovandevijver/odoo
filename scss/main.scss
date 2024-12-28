@@ -2,53 +2,37 @@
     Main
     ==========================================================================  */
 
-    // Import Boostrap functions and variables
+    // Utils
 
-    @import '../node_modules/bootstrap/scss/_functions.scss';
-    @import '../node_modules/bootstrap/scss/_variables.scss';
+    @import 'utils/_mediaqueries.scss';
+    @import 'utils/_variables.scss';
+    @import 'utils/_helpers.scss';
+    @import 'utils/_margins.scss';
+    @import 'utils/_transition.scss';
+    @import 'utils/_exponents.scss';
 
-    // Nav link
+    // Vendors
 
-    $nav-link-padding-x: 20px;
-    $nav-link-padding-y: 10px;
-    $nav-link-color: $gray-400;
-    $nav-link-hover-color: $white;
-    $nav-link-disabled-color: $gray-600;
+    @import 'vendors/_reset.scss';
 
-    // Nav tabs
+    // Base
 
-    $nav-tabs-border-width: 0;
-    $nav-tabs-border-radius: 0;
-    $nav-tabs-link-active-color: $gray-700;
-    $nav-tabs-link-active-bg: $white;
+    @import 'base/_fonts.scss';
+    @import 'base/_main.scss';
+    @import 'base/_typography.scss';
 
-    // Card
+    // Components
 
-    $card-spacer-x: 20px;
-    $card-spacer-y: 20px;
-    $card-border-width: 0;
-    $card-border-radius: 0;
+    @import 'components/_nav.scss';
+    @import 'components/_subnav.scss';
+    @import 'components/_intro.scss';
+    @import 'components/_loading.scss';
 
-    // List group
+    // Layout
 
-    $list-group-color: $purple-600;
-    $list-group-bg: $white;
-    $list-group-item-padding-y: 20px;
-    $list-group-item-padding-x: 20px;
-    $list-group-hover-bg: $white;
-    $list-group-active-color: $gray-700;
-    $list-group-active-bg: $white;
-    $list-group-active-border-color: $gray-300;
-    $list-group-action-hover-color: $gray-700;
-    $list-group-action-active-color: $gray-700;
-    $list-group-action-active-bg: $white;
+    @import 'layout/_tabs.scss';
+    @import 'layout/_tab.scss';
+    @import 'layout/_cases.scss';
+    @import 'layout/_footer.scss';
 
-    // Spinner
-
-    $spinner-width: 4rem;
-    $spinner-height: $spinner-width;
-    $spinner-animation-speed: 1s;
-
-    // Bootstrap
-
-    @import '../node_modules/bootstrap/scss/bootstrap.scss';
+    // Pages
